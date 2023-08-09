@@ -1,0 +1,575 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+.justifyBetween {
+  justify-content: space-between;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.positionRelative {
+  position: relative;
+}
+
+.decorationNone {
+  text-decoration: none;
+}
+
+.white {
+  color: #fff;
+}
+
+.listStyleNone {
+  list-style: none;
+}
+
+.linkMargin {
+  margin-top: 16px;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+/*  */
+body {
+  background-color: #0b1524;
+  font-family: "Raleway", sans-serif;
+}
+
+.main,
+.mainSection {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.navbar {
+  max-width: 1280px;
+  margin: 70px auto;
+  padding: 0 20px;
+}
+
+.logo {
+  max-width: 176px;
+  height: 52px;
+}
+
+.link {
+  font-size: 18px;
+}
+
+.linkanimation::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #62e0d9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+.linkanimation:hover::after {
+  width: 100%;
+}
+
+.navLinks li {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+.headerInformation {
+  max-width: 740px;
+  margin: 75px auto;
+  padding: 0 20px;
+}
+
+.headerImgBox {
+  max-width: 720px;
+  width: 100%;
+}
+
+.headerimg {
+  width: 100%;
+}
+
+.headerMainText {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.headerPara {
+  max-width: 590px;
+  font-size: 20px;
+  margin: 32px auto;
+  line-height: 30px;
+}
+
+.btn {
+  padding: 18px 96px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 40px;
+  background-image: linear-gradient(to right, #63e1d9, #34a0cd);
+}
+
+.btn:hover {
+  background-image: linear-gradient(to right, #8adae3, #8adae3);
+}
+
+.features {
+  max-width: 1000px;
+  margin: 150px auto;
+}
+
+.box {
+  flex-wrap: wrap;
+  gap: 147px;
+  text-align: center;
+}
+
+.card {
+  max-width: 363px;
+}
+
+.box h4 {
+  font-size: 20px;
+  margin: 16px auto 9px auto;
+}
+
+.box p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.box2 {
+  margin-top: 78px;
+}
+
+.productive {
+  flex-wrap: wrap;
+  gap: 57px;
+}
+
+.productiveImgBox {
+  max-width: 500px;
+}
+
+.productiveImg {
+  width: 100%;
+}
+
+.productiveInformation {
+  max-width: 500px;
+}
+
+.productiveInformation h4 {
+  font-size: 40px;
+  max-width: 480px;
+}
+
+.productiveInformation p {
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+.productiveInformation a {
+  color: #63e1d9;
+  margin-top: 24px;
+  display: inline-block;
+  border-bottom: 1px solid #63e1d9;
+}
+
+.testimonial {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 120px 0 320px 0;
+  gap: 40px;
+}
+
+.review {
+  max-width: 360px;
+  background-color: #202a3c;
+  padding: 40px 0 20px 20px;
+  border-radius: 10px;
+}
+
+.author {
+  gap: 10px;
+}
+
+.review p {
+  font-size: 14px;
+  margin-bottom: 24px;
+  padding: 0 10px;
+}
+
+.authorName h5 {
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.authorName p {
+  padding: 0;
+  font-size: 7px;
+}
+
+.quoteImgBox {
+  position: absolute;
+  z-index: -1;
+  top: -35px;
+  left: -10px;
+}
+
+.CTA {
+  max-width: 863px;
+  margin: auto;
+  margin-top: -150px;
+  padding: 0 70px;
+  background-color: #1b2330;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+.CTA h4 {
+  font-size: 32px;
+  max-width: 350px;
+  margin: 42px auto 16px auto;
+}
+
+.CTA p {
+  font-size: 14px;
+  max-width: 673px;
+  margin: 0 auto;
+  line-height: 21px;
+}
+
+.CtaBtn {
+  padding: 15px 27px;
+}
+
+.ctaInputBox {
+  max-width: 710px;
+  margin: 40px auto;
+  gap: 30px;
+}
+
+#email {
+  padding: 16px 208px 16px 30px;
+  border-radius: 30px;
+  border: none;
+}
+
+#email::placeholder {
+  opacity: 0.6;
+}
+
+.footer {
+  max-width: 1440px;
+  background-color: #172337;
+  margin: 0 auto;
+}
+
+.footerData {
+  max-width: 1240px;
+  padding: 53px 20px;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 80px;
+}
+
+.footerLogoBox {
+  margin-bottom: 52px;
+}
+
+.Address,
+.email {
+  gap: 24px;
+}
+
+.cellNumber {
+  gap: 32px;
+}
+
+.email {
+  margin-top: 16px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.socialLinks {
+  gap: 12px;
+}
+
+.footerList a:hover {
+  font-weight: bold;
+  color: #62e0d9;
+}
+
+.cellNumber:hover,
+.email:hover,
+.link:hover,
+.logo:hover {
+  color: #62e0d9;
+  cursor: pointer;
+}
+
+.footerlink {
+  width: 32px;
+  height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.footerlink:hover {
+  color: #62e0d9;
+  border: 1px solid #62e0d9;
+}
+
+@media (max-width: 1136px) {
+  .main,
+  .mainSection {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .productive,
+  .productiveImgBox {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .productiveImg {
+    width: 100%;
+  }
+
+  .productiveInformation {
+    max-width: 600px;
+  }
+
+  .testimonial {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footerData {
+    max-width: 800px;
+  }
+}
+
+@media (max-width: 880px) {
+  .features {
+    max-width: 700px;
+    margin: 120px auto;
+  }
+
+  .card {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .headerImgBox {
+    max-width: 600px;
+    margin: 30px auto;
+  }
+
+  .headerimg {
+    width: 100%;
+  }
+
+  .headerMainText {
+    font-size: 32px;
+    line-height: 1.5;
+    max-width: 545px;
+    margin: 0 auto;
+  }
+
+  .features {
+    margin: 100px auto 130px auto;
+  }
+
+  .box {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .box p {
+    max-width: 418px;
+  }
+
+  .headerPara,
+  .productiveInformation p,
+  .review {
+    font-size: 16px;
+    max-width: 500px;
+  }
+
+  .testimonial {
+    max-width: 700px;
+    padding: 0 20px;
+    margin: 110px auto 180px auto;
+  }
+
+  .CTA {
+    max-width: 650px;
+  }
+
+  .CTA p {
+    font-size: 14px;
+    max-width: 400px;
+  }
+
+  #email {
+    padding: 10px 150px 10px 20px;
+    border-radius: 15px;
+  }
+
+  .CtaBtn {
+    font-size: 10px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    align-items: flex-start;
+    max-width: 550px;
+    margin: 30px auto;
+  }
+
+  .logo {
+    display: flex;
+  }
+
+  .mainLogo {
+    width: 90px;
+    align-self: center;
+  }
+
+  .navLinks a {
+    font-size: 14px;
+  }
+
+  .productive {
+    padding: 0 30px;
+  }
+
+  .headerImgBox,
+  .productiveImgBox {
+    max-width: 450px;
+  }
+
+  .CTA {
+    max-width: 450px;
+    padding: 0 30px;
+  }
+
+  .CTA h4 {
+    font-size: 18px;
+  }
+
+  .CTA p {
+    font-size: 14px;
+    max-width: 280px;
+  }
+
+  .ctaInputBox {
+    flex-wrap: wrap;
+  }
+
+  #email {
+    padding: 20px 90px 15px 29px;
+    border-radius: 30px;
+  }
+
+  .CtaBtn {
+    font-size: 14px;
+    padding: 16px 72px;
+  }
+
+  .footerData {
+    max-width: 500px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .socialLinks {
+    margin: 0 auto;
+  }
+
+  .cellNumber {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar {
+    margin: 10px auto;
+    padding: 0 20px;
+    align-items: center;
+  }
+
+  .navLinks li {
+    padding: 7px;
+  }
+
+  .navLinks a {
+    font-size: 10px;
+  }
+
+  .headerMainText,
+  .headerImgBox {
+    font-size: 24px;
+    max-width: 320px;
+  }
+
+  .headerPara {
+    max-width: 300px;
+    font-size: 14px;
+  }
+
+  .productive h4 {
+    font-size: 22px;
+  }
+
+  .productive p {
+    font-size: 14px;
+  }
+
+  .box p,
+  .CTA {
+    max-width: 320px;
+  }
+
+  .headerBtn,
+  .CtaBtn {
+    padding: 16px 50px;
+  }
+
+  #email {
+    padding: 15px 70px 15px 20px;
+  }
+}
